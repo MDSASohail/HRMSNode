@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            padding: 0px;
+            margin: 0px;
+            /* color: white; */
+        }
+        .he
+        {
+            background-color: rgb(62, 62, 238);
+            padding: 15px;
+            color: white;
+            text-align: center;
+        }
+        .detailDiv
+        {
+            /* border: 1px solid red; */
+            font-size: 1.5rem;
+            padding: 10px;
+        }
+
+        .detail 
+        {
+             background-color: rgb(62, 62, 238);
+             color: white;
+             margin: 15px 0px;
+             padding: 10px 5px;
+        }
+
+        .detailDiv:nth-child(odd)
+        {
+             background-color: rgba(131, 131, 243,0.3);
+        }
+        .detailDiv:nth-child(even)
+        {
+             background-color: rgba(165, 165, 247,0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="he"><%=head%></h1>
+    <h2 class="detail">Personal Detail</h2>
+    
+    <div class="detailDiv">
+        <strong>Full Namde : </strong> <span> <%= fname%> <%= mname%> <%=lname %></span>
+    </div>
+    <div class="detailDiv">
+        <strong>User Name : </strong> <span><%=username %></span>
+    </div>
+    
+    <div class="detailDiv">
+        <strong>Gender : </strong> <span><%=gender %> </span>
+    </div>
+    <div class="detailDiv">
+        <strong>Address : </strong> <span><%=address %></span>
+    </div>
+    <h2 class="detail">Contact Information</h2>
+    <div class="detailDiv">
+        <strong>Mobile No. : </strong> <span><%=mobile %></span>
+    </div>
+    <div class="detailDiv">
+        <strong>Home Mobile No. : </strong> <span><%=mobile2 %></span>
+    </div>
+    <div class="detailDiv">
+        <strong>Email Id : </strong> <span><%=email %></span>
+    </div>
+    <div>
+        <h1 class="detail">Employe Status</h1>
+        <div class="detailDiv">
+            <strong>Supervisor : </strong> <span><%=supervisor %></span>
+        </div>
+        <div class="detailDiv">
+            <strong>Department : </strong><span><%=department %></span>
+        </div>
+        <div class="detailDiv">
+            <strong>Salary : </strong><span><%=salary %></span>
+        </div>
+    </div>
+    
+</body>
+</html>
