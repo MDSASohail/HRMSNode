@@ -39,7 +39,8 @@ route.post('/add',async(req,res)=>{
               const salary=addedDetail.salary;
               const head="Form Submitted Successfylly"
               console.log(addedDetail);
-              res.render('h',{fname,lname,mname,address,mobile,email,mobile2,supervisor,gender,department,head,username,salary});
+             // res.render('h',{fname,lname,mname,address,mobile,email,mobile2,supervisor,gender,department,head,username,salary});
+             res.redirect(`home/single/${username}`)
          }catch(err){
             res.json(err);
          }
