@@ -43,7 +43,7 @@ route.post('/login',async(req,res)=>{
 
 
     }catch(err){
-        res.json({username:err.message})
+        res.json({username:"false"})
         console.log("In error")
     }
 })
