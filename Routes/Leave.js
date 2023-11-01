@@ -12,7 +12,7 @@ route.post('/add',async (req,res)=>{
 
       try{
               const uploadedRequiest= await leaveData.save();
-              res.redirect('http://localhost:3000/home/success/Leave Requested Successfully')
+              res.redirect('/home/success/')
               
       }catch(Err){
          res.json(Err);
