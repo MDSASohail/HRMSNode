@@ -12,7 +12,7 @@ route.post('/add',async (req,res)=>{
 
       try{
               const uploadedRequiest= await leaveData.save();
-              res.redirect('/home/success/')
+              
               
       }catch(Err){
          res.json(Err);
