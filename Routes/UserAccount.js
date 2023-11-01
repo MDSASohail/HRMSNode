@@ -38,7 +38,7 @@ route.post('/login',async(req,res)=>{
         }
         else
         {
-            res.json({username:user.username,password:false})
+            res.json({username:"false",password:false})
         }
 
 
